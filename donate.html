@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAIL AFRICA</title>
+    <link rel="stylesheet" href="donate.css">
+    <link rel="shortcut icon" href="hailafrica-removebg-preview.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="shortcut icon" href="hailafrica-removebg-preview.png.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+  
+    
+  <style>
+    :root {
+      --main-color: #557155;
+      --light-bg: #f8f9fa;
+      --dark-bg: #2a2a2a;
+      --dark-text: #eaeaea;
+      --dark-input: #2a2a2a;
+    }
+
+    body {
+      background-color: var(--light-bg);
+      color: #000;
+      transition: all 0.3s ease;
+    }
+
+    .form-card {
+      animation: fadeInUp 0.6s ease;
+      background-color: #fff;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .btn-custom {
+      background-color: var(--main-color);
+      border-color: var(--main-color);
+      color: #fff;
+    }
+
+    .btn-custom:hover {
+      background-color: #445c44;
+      border-color: #445c44;
+    }
+
+    .bi {
+      color: #557155;
+      margin-right: 6px;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        transform: translateY(30px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .dark-mode {
+      background-color: var(--dark-bg) !important;
+      color: var(--dark-text);
+    }
+
+    .dark-mode .form-card {
+      background-color: #1e1e1e;
+      color: var(--dark-text);
+    }
+
+    .dark-mode .form-control {
+      background-color: var(--dark-input);
+      color: var(--dark-text);
+      border: 1px solid #444;
+    }
+
+    .dark-mode .form-control::placeholder {
+      color: #aaa;
+    }
+
+    .toggle-switch {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+  </style>
+  </head>
+<body style="font-family: Roboto Flex, sans-serif; font-optical-sizing: auto; font-style: normal;">
+     <div class="theme">
+        <div class="container0">
+             <div class="header0">
+          <nav style="background-color: #e89e21 !important;" class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"><img src="hailafrica-removebg-preview.png" alt="" height="60px"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div style="background-color: #e89e21 !important;" class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="hailafrica-removebg-preview.png" alt="" height="100px"></h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div style="background-color: #e89e21 !important;" class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                       <li class="nav-item dropdown">
+                      <a  class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Market Place
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="products.html">Our Products</a></li>
+                        <li><a class="dropdown-item" href="services.html">Our Services</a></li>
+                      </ul>
+                    </li>
+                       <li class="nav-item dropdown">
+                      <a  class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Get Involved
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="donate.html">Donate</a></li>
+                        <li><a class="dropdown-item" href="partner.html">Partner</a></li>
+                        <li><a class="dropdown-item" href="volunteer.html">Volunteer</a></li>
+                      </ul>
+                    </li>
+                   <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="about.html">About Us</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+          <div class="begin">
+            <h3 style="font-size: 40px; color: #557155;">Donate</h3>
+          </div>
+          <div class="dbanner">
+            <div class="overlay">
+              <h6 style="font-size: 22px; color: #ffffff;">
+                Imagine a generation of African youth empowered with the skills, knowledge, and passion to shape a brighter future. At HAIL Africa (Human Asset Incubation Lab), this is the vision that drives us every single day. We're on the ground in Lagos, Nigeria, and across the continent, working tirelessly to empower youths by providing crucial training, mentorship, and resources; to sensitize communities by raising awareness on critical social issues, fostering open dialogue, and promoting positive change; and to make our world a better place by investing in youth and driving social progress, building stronger, more resilient communities, and contributing to a more equitable and sustainable world for all. We can't do it alone—we need your help to fuel this vital mission. Every donation, no matter the size, has a direct and significant impact: it can provide essential learning materials for a youth entrepreneurship workshop, support a community sensitization campaign on crucial issues like climate change awareness or gender equality, and contribute to a mentorship program that guides a young person towards their full potential. Thank you for your generosity and belief in our mission.
+
+              </h6>
+            </div>
+          </div>
+          <div class="dfill">
+        
+<!-- Dark Mode Toggle -->
+<div class="toggle-switch">
+  <button class="btn btn-outline-dark" id="toggleDarkMode" title="Toggle Dark Mode">
+    <i class="bi bi-moon-fill"></i>
+  </button>
+</div>
+
+<!-- Donation Form -->
+<div class="container mt-5">
+   <div class="card shadow">
+    <div class="card-header text-white text-center" style="background-color: #557155;">
+      <h4 class="mb-0"><i class="bi bi-person-lines-fill"></i> Donate Now</h4>
+    </div>
+  <form id="donationForm" class="p-4 shadow rounded form-card">
+    <div class="mb-3">
+      <label for="name" class="form-label"><i class="bi bi-person-fill"></i> Full Name</label>
+      <input type="text" id="name" class="form-control" required>
+    </div>
+    
+    <div class="mb-3">
+      <label for="email" class="form-label"><i class="bi bi-envelope-fill"></i> Email address</label>
+      <input type="email" id="email" class="form-control" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="amount" class="form-label"><i class="bi bi-currency-naira"></i> Donation Amount (₦)</label>
+      <input type="number" id="amount" class="form-control" min="100" required>
+    </div>
+
+    <button type="submit" class="btn btn-custom w-100">
+      <i style="color: #fff !important;" class="bi bi-heart-fill"></i> Donate
+    </button>
+  </form>
+</div>
+
+
+    </div>
+
+          <div class="footer">
+            <div class="footerhld">
+                <div class="intouch">
+                <div class="touchtext"></div>
+                <div class="touchinfo"><img src="touch.png" alt="" height="50px"><h2 style="font-size: 20px; color: #557155;">GET IN TOUCH</h2></div>
+                <p><i class="bi bi-geo-alt-fill"></i><span style="color: #ffffff;"> 15, Mba Street Surulere Lagos Nigeria</span></p>
+                <p><i class="bi bi-telephone-fill"></i><span style="color: #ffffff;"> 08075656333 </span></p>
+                <p><i class="bi bi-envelope-fill"></i><span style="color: #ffffff;"> info@hailafrica.com</span></p>
+                <div class="iconshld">
+                  <div class="iconhld2"><a href="https://web.facebook.com/profile.php?id=61555612273447" target="_blank"><i class="go bi bi-facebook"></i></a></div>
+                  <div class="iconhld2"><a href="https://www.instagram.com/hail_africa/" target="_blank"><i class="go bi bi-instagram"></i></a></div>
+                  <div class="iconhld2"><a href="https://www.tiktok.com/@hail.africa" target="_blank"><i class="go bi bi-tiktok"></i></a></div>
+                  <div class="iconhld2"><a href="https://www.youtube.com/@HAILAFRICA-zm6xv" target="_blank"><i class="go bi bi-youtube"></i></a></div>
+                </div>
+
+                </div>
+                <div class="links">
+                <div class="linkinfo"><img src="link.png" alt="" height="30px"><h2 style="font-size: 20px; color: #557155;">QUICK LINKS</h2></div>
+                <a style="text-decoration: none;" href="index.html"><p><i style="color: rgb(50, 50, 50);" class="bi bi-caret-right-fill"></i><span style="color: #ffffff;"> Home</span></p></a>
+                <a style="text-decoration: none;" href="donate.html"><p><i style="color: rgb(50, 50, 50);" class="bi bi-caret-right-fill"></i><span style="color: #ffffff;"> Donate</span></p></a>
+                <a style="text-decoration: none;" href="about.html"><p><i style="color: rgb(50, 50, 50);" class="bi bi-caret-right-fill"></i><span style="color: #ffffff;"> About</span></p></a>
+                </div>
+                <div class="letter">
+                <div class="letterinfo"><img src="letter.png" alt="" height="23px"><h2 style="font-size: 20px; color: #557155;">NEWSLETTER</h2></div>
+                <div class="shortnews" style="color: #ffffff;"><p>Be the first to get our latest updates. <br> Sign up for our newsletter!</p></div>
+                <form action="https://usebasin.com/f/ce4c1314e33a" method="POST">
+                  <div class="searchhld">
+                      <div class="search">
+                        <input class="email" name="email" type="email" placeholder="Email address">
+                      </div>
+                      <div class="searchbut">
+                        <input class="sign" type="submit" value="submit">
+                      </div>
+                  </div>
+                </form>
+             
+            </div>
+         </div>
+         <div class="end"><p>&copy; <span style="color: #557155;"> hailafrica.com </span>. All rights reserved</p></div>
+        
+        </div>
+     </div>
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+     <!-- Dark Mode Toggle Script -->
+<script>
+  document.getElementById('toggleDarkMode').addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+  });
+</script>
+
+      <!-- Paystack Inline Script -->
+  <script src="https://js.paystack.co/v1/inline.js"></script>
+
+  <script>
+    const paymentForm = document.getElementById("donationForm");
+
+    paymentForm.addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      let name = document.getElementById("name").value.trim();
+      let email = document.getElementById("email").value.trim();
+      let amount = parseFloat(document.getElementById("amount").value.trim()) * 100; // in kobo
+
+      if (!name || !email || amount < 10000) {
+        alert("Please fill out the form properly. Minimum donation is ₦100.");
+        return;
+      }
+
+      let handler = PaystackPop.setup({
+        key: 'pk_test_1c7980721261adb005d3642f6730e6625e8926a3', // 🔁 Replace this!
+        email: email,
+        amount: amount,
+        currency: "NGN",
+        ref: 'DONATE_' + Math.floor((Math.random() * 1000000000) + 1),
+        metadata: {
+          custom_fields: [
+            {
+              display_name: "Donor Name",
+              variable_name: "donor_name",
+              value: name
+            }
+          ]
+        },
+        callback: function(response) {
+          alert("Thanks for donating! Payment successful. Ref: " + response.reference);
+          paymentForm.reset();
+        },
+        onClose: function() {
+          alert('Transaction cancelled.');
+        }
+      });
+
+      handler.openIframe();
+    });
+  </script>
+</body>
+</html>

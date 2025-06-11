@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAIL AFRICA</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="hailafrica-removebg-preview.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="shortcut icon" href="hailafrica-removebg-preview.png.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+  
+<style>
+    :root {
+      --main-color: #557155;
+      --light-bg: #f8f9fa;
+      --dark-bg:#2a2a2a;
+      --dark-text: #eaeaea;
+      --dark-input: #2a2a2a;
+    }
+
+    body {
+      background-color: var(--light-bg);
+      color: #000;
+      transition: all 0.3s ease;
+    }
+
+    
+    .form-card {
+      animation: fadeInUp 0.6s ease;
+      background-color: #fff;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .btn-custom {
+      background-color: var(--main-color);
+      border-color: var(--main-color);
+      color: #fff;
+    }
+
+    .btn-custom:hover {
+      background-color: #445c44;
+      border-color: #445c44;
+    }
+
+    .bi {
+        color: #557155;
+        margin-right: 6px;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        transform: translateY(30px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .dark-mode {
+      background-color: var(--dark-bg) !important;
+      color: var(--dark-text);
+    }
+
+    .dark-mode .form-card {
+      background-color: #1e1e1e;
+      color: var(--dark-text);
+    }
+
+    .dark-mode .form-control {
+      background-color: var(--dark-input);
+      color: var(--dark-text);
+      border: 1px solid #444;
+    }
+
+    .dark-mode .form-control::placeholder {
+      color: #aaa;
+    }
+
+    .toggle-switch {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body style="font-family: Roboto Flex, sans-serif; font-optical-sizing: auto; font-style: normal;">
+  <div class="theme">
+    <div class="container0">
+        <div class="header0">
+          <nav style="background-color: #e89e21 !important;" class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"><img src="hailafrica-removebg-preview.png" alt="" height="60px"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div style="background-color: #e89e21 !important;" class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="hailafrica-removebg-preview.png" alt="" height="100px"></h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div style="background-color: #e89e21 !important;" class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                       <li class="nav-item dropdown">
+                      <a  class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Market Place
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="products.html">Our Products</a></li>
+                        <li><a class="dropdown-item" href="services.html">Our Services</a></li>
+                      </ul>
+                    </li>
+                       <li class="nav-item dropdown">
+                      <a  class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Get Involved
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="donate.html">Donate</a></li>
+                        <li><a class="dropdown-item" href="partner.html">Partner</a></li>
+                        <li><a class="dropdown-item" href="volunteer.html">Volunteer</a></li>
+                      </ul>
+                    </li>
+                   <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="about.html">About Us</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+
+        <div class="intro">
+
+                    <!-- Dark Mode Toggle -->
+          <div class="toggle-switch">
+            <button class="btn btn-outline-dark" id="toggleDarkMode" title="Toggle Dark Mode">
+              <i class="bi bi-moon-fill"></i>
+            </button>
+          </div>
+
+          <div class="overlay">
+            <div class="bigtext"><h2>EMPOWERING AFRICA, UNITING VOICES</h2></div>
+            <div class="smalltext"><h6 style="font-size: 25px; color: #ffffff;">"Developing the next generation of African leaders, driving positive change."</h6></div>
+          </div>
+
+        </div>
+        <div class="ourcard">
+         <div class="vision">
+          <div class="overlay0">
+            <div class="hint">
+              <h2 style="font-size: 50px; color: #557155; ">Our vision</h2>
+            </div>
+            <div class="full">
+              <h5>Developing the African human capital into a global human powerhouse as a set equipped to solve African challenges with a global standard</h5>
+            </div>
+          </div>
+         </div>
+         <div class="mission">
+          <div class="overlay0">
+            <div class="hint">
+              <h2 style="font-size: 50px; color: #557155; ">Our mission</h2>
+            </div>
+            <div class="full">
+              <h5>Invest in the development of young African human capital potential into asset through annual incubation programs that encompass training, mentorship and internship with the aid of strategic partnerships, support and sponsorship</h5>
+            </div>
+          </div>
+         </div>
+        </div>
+        <div class="storytext"> <h2 style="font-size: 40px; color: #557155; ">Our Programs</h2></div>
+        <div class="stories">
+          <div class="card1">
+            <div class="imgs">
+              <img src="potentilas.webp" alt="" height="200px" width="100%">
+            </div>
+            <div class="more">
+              <div class="moretext0"><h3  style="font-size: 21px; color: #557155; ">Potential Development & <br> Capacity Building</h3></div>
+              <p>Hail Africa empowers individuals and organizations <br> by unlocking potential and <br> strengthening capacity. <br> Through mentorship, training, and skill-building,<br>  we help people maximize their abilities and enhance <br> efficiency for long-term success. Our approach <br> fosters leadership, innovation, and resilience, driving <br> sustainable growth and meaningful change.</p>
+            </div>
+          </div>
+            <div class="card2">
+              <div class="imgs">
+                <img src="skill.jpg" alt="" height="200px" width="100%">
+              </div>
+              <div class="more">
+                <div class="moretext"><h3  style="font-size: 27px; color: #557155; ">Skill Acquistion</h3>
+                <br><br><p>Hail Africa empowers communities through practical <br> skill acquisition, tailored to local needs. <br> Hands-on training and mentorship build long-term <br> capacity, focusing on diverse skills like technology, <br> business, and agriculture to drive <br> sustainable growth.</p>
+                </div>
+              </div>
+            </div>
+            <div class="card3">
+              <div class="imgs">
+                <img src="enter.jpg" alt="" height="200px" width="100%">
+              </div>
+              <div class="more">
+                <div class="moretext"><h4  style="font-size: 27px; color: #557155; ">Enterpreneurship</h4></div>
+                <p>Hail Africa's entrepreneurship programs <br> empower communities through practical skills: <br> needs-driven business planning, <br> microfinance education, effective marketing, <br> efficient management, valuable networking, digital <br> entrepreneurship, and sustainable business <br> practices.</p>
+              </div>
+            </div>
+            <div class="card4">
+              <div class="imgs">
+                <img src="global0.jpg" alt="" height="200px" width="100%">
+              </div>
+              <div class="more">
+                <div class="moretext"><h4  style="font-size: 27px; color: #557155; ">Global Opportunities</h4></div>
+                <br><br><p>Hail Africa fosters community entrepreneurship <br> through: market-aligned ventures, financial <br> empowerment, strategic promotion, operational <br> excellence, collaborative growth, online business <br> acumen, and responsible enterprise.</p>
+              </div>
+            </div>
+
+            <div class="card5">
+              <div class="imgs">
+                <img src="lead.jpg" alt="" height="200px" width="100%">
+              </div>
+              <div class="more">
+                <div class="moretext"><h4  style="font-size: 27px; color: #557155; ">Leadership & Impact</h4></div>
+                <br><br><p>Hail Africa develops impactful leaders through: <br> community-driven change, strategic visioning, <br> effective communication, collaborative problem- <br>solving, ethical leadership, measurable impact, and <br> resilience building.</p>
+              </div>
+            </div>
+        </div>
+        <div class="impacttext"> <h2 style="font-size: 38px; color: #557155; ">Our Impact</h2></div>
+        <div class="impact">
+            <div class="cardone">
+              <div  style="min-height: 250px;" class="card" style="width: 100%;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title" style="color: #557155;">Bringing out Sense of Ladership: Tolu's Story</h5>
+                  <p class="card-text">Oyediran Toluwanimi was one of the participants at the Hail Africa Cohort 1 programme. He was in charge of all areas of the virtual aspect of the programme. Touwanimi is a student leader who teaches his peers academically. Toluwanimi was one of the Youth advisory Group 2024 of the Generation Global Platform. He has builded up leadership skills thanks to HAIL Africa.</p>
+                </div>
+              </div>
+            </div>
+            <div class="cardtwo">
+              <div  style="min-height: 250px;" class="card" style="width: 100%;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title" style="color: #557155;">Empowering Yong Minds: Emmnauel's Journey</h5>
+                  <p class="card-text">Nwigwe Emmanuel, a student from Lagos Progressive Senior Secondary School, discovered his passion for graphics design through our incubation programme. With mentorship and training, Emmanuel developed his skills and gained confidence.Today, Emmanuel is a talented young designer, equipped to make a lasting impact in his community. His story is a testament to the power of empowerment and the potential of Africa's youth.</p>
+                </div>
+              </div>
+            </div>
+            <div class="cardthree">
+              <div  style="min-height: 250px;" class="card" style="width: 100%;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title" style="color: #557155;">Unlocking Potential : Surajudeen Ali's Story</h5>
+                  <p class="card-text">Hail Africa Incubation Programme has transformed the life of Surajudeen Ali . Through our programme, Surajudeen discovered his potential skills and developed a passion for graphics design and fashion design.
+
+                    Our mentorship and training have equipped Surajudeen to make a positive impact in his community. His story is a testament to the power of empowerment and the potential of Africa's youth.</p>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="involvedtext"> <h2 style="font-size: 32px; color: #557155; ">Get Invovled</h2></div>
+        <div class="getinvolved">
+            <div class="carda">
+              <div class="iconhld">
+                <div class="ico">
+                  <img src="donate-icon.png" alt="" height="110px" width="100%">
+                </div>
+              </div>
+              <div class="pacttext">
+                <div class="short"><h2 style="font-size: 30px; color: #557155; ">Donate</h2></div>
+                <p style="color: rgb(60,60,60);">Your donation can create lasting change! By contributing, you’re helping us provide vital support and make a real difference in the lives of those who need it most. Every gift, big or small, has the power to transform lives. Join us in making an impact today!</p>
+                <a href="donate.html" style="text-decoration: none; color: white;"><div class="pactbut"><p style="color: #ffffff; font-size: 20px; text-align: center;">Donate</p></div></a>
+              </div>
+            </div>
+            <div class="cardb">
+              <div class="iconhld">
+                <div class="ico2">
+                  <img src="volunteer-removebg-preview.png" alt="" height="110px" width="100%">
+                </div>
+              </div>
+              <div class="pacttext">
+                <div class="short"><h2 style="font-size: 30px; color: #e89e21; ">Volunteer</h2></div>
+                <p style="color: rgb(30,30,30);">Volunteering is a rewarding experience that not only allows you to give back to the community but also helps you grow personally and professionally. You can make a real difference in the lives of others while building meaningful connections.</p>
+                <a href="volunteer.html" style="text-decoration: none; color: white;"><div class="pactbut1"><p style="color: #ffffff; font-size: 20px; text-align: center;">Volunteer</p></div></a>
+              </div>
+            </div>
+            <div class="cardc">
+              <div class="iconhld">
+                <div class="ico">
+                  <img src="partner.png" alt="" height="110px" width="100%">
+                </div>
+              </div>
+              <div class="pacttext">
+                <div class="short"><h2 style="font-size: 30px; color: #557155; ">Partner</h2></div>
+                <p style="color: rgb(60,60,60);">Partner with us to make a lasting impact! Together, we can achieve more and bring about meaningful change. Your support will help us reach new heights and create positive outcomes for those in need. Let’s work together to make a difference!</p>
+                <a href="partner.html" style="text-decoration: none; color: white;"><div class="pactbut"><p style="color: #ffffff; font-size: 20px; text-align: center;">Partner<p></div></a>
+              </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+      <div class="footerhld">
+        <div class="intouch">
+          <div class="touchtext"></div>
+          <div class="touchinfo"><img src="touch.png" alt="" height="50px"><h2 style="font-size: 20px; color: #557155;">GET IN TOUCH</h2></div>
+          <p><i class="bi bi-geo-alt-fill"></i><span style="color: #ffffff;"> 15, Mba Street Surulere Lagos Nigeria</span></p>
+          <p><i class="bi bi-telephone-fill"></i><span style="color: #ffffff;"> 08075656333 </span></p>
+          <p><i class="bi bi-envelope-fill"></i><span style="color: #ffffff;"> info@hailafrica.com</span></p>
+            <div class="iconshld">
+              <div class="iconhld2"><a href="https://web.facebook.com/profile.php?id=61555612273447" target="_blank"><i class="go bi bi-facebook"></i></a></div>
+              <div class="iconhld2"><a href="https://www.instagram.com/hail_africa/" target="_blank"><i class="go bi bi-instagram"></i></a></div>
+              <div class="iconhld2"><a href="https://www.tiktok.com/@hail.africa" target="_blank"><i class="go bi bi-tiktok"></i></a></div>
+              <div class="iconhld2"><a href="https://www.youtube.com/@HAILAFRICA-zm6xv" target="_blank"><i class="go bi bi-youtube"></i></a></div>
+            </div>
+        </div>
+        <div class="links">
+          <div class="linkinfo"><img src="link.png" alt="" height="30px"><h2 style="font-size: 20px; color: #557155;">QUICK LINKS</h2></div>
+          <a style="text-decoration: none;" href="index.html"><p><i style="color: rgb(50, 50, 50);" class="bi bi-caret-right-fill"></i><span style="color: #ffffff;"> Home</span></p></a>
+          <a style="text-decoration: none;" href="donate.html"><p><i style="color: rgb(50, 50, 50);" class="bi bi-caret-right-fill"></i><span style="color: #ffffff;"> Donate</span></p></a>
+          <a style="text-decoration: none;" href="about.html"><p><i style="color: rgb(50, 50, 50);" class="bi bi-caret-right-fill"></i><span style="color: #ffffff;"> About</span></p></a>
+        </div>
+        <div class="letter">
+          <div class="letterinfo"><img src="letter.png" alt="" height="23px"><h2 style="font-size: 20px; color: #557155;">NEWSLETTER</h2></div>
+          <div class="shortnews" style="color: #ffffff;"><p>Be the first to get our latest updates. <br> Sign up for our newsletter!</p></div>
+          <form action="https://usebasin.com/f/ce4c1314e33a" method="POST">
+          <div class="searchhld">
+              <div class="search">
+                <input class="email" name="email" type="email" placeholder="Email address">
+              </div>
+              <div class="searchbut">
+                <input class="sign" type="submit" value="submit">
+              </div>
+          </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="end"><p>&copy; <span style="color: #557155;"> hailafrica.com </span>. All rights reserved</p></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  
+<!-- Dark Mode Toggle Script -->
+<script>
+  document.getElementById('toggleDarkMode').addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+  });
+</script>
+</body>
+</html>

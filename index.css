@@ -1,0 +1,795 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.theme{
+    width: 100%;
+    min-height: 1000px;
+    background-color: transparent;
+}
+
+/* @media only screen and (max-width:800px){
+    .theme{
+        background-color: rgb(50, 50, 50);
+    }
+} */
+
+.container0{
+    width: 92%;
+    min-height: 1000px;
+    background-color: transparent;
+    margin-left: 4%;
+}
+
+.header0{
+    width: 100%;
+    height: 70px;
+    background-color: lightgrey; 
+    margin-top: 10px;
+}
+
+@media only screen and (max-width:800px){
+    .header0{
+        margin-top: 0;
+    }
+}
+
+@media only screen  and  (min-width:800px) and (max-width:1100px){
+    .header0{
+        margin-top: 0;
+    }
+}
+
+.intro{
+    width: 100%;
+    height: 350px;
+    background-color: lightgrey; 
+    margin-top: 5%;
+    background-image: url(general_edited.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-width:800px){
+    .intro{
+       background-image: url(general.png);
+       background-size: cover;
+       background-repeat: no-repeat;
+    }
+}
+
+@media only screen  and  (min-width:800px) and (max-width:910px){
+    .intro{
+        background-image: url(general.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+     }
+}
+
+.overlay{
+    width: 100%;
+    height: 350px;
+    background-color: rgba(232,158,33,0.4); 
+}
+
+.bigtext{
+    width: 100%;
+    height: 220px;
+    background-color: transparent; 
+    margin-top: 7%;
+    float: left;
+}
+
+.bigtext h2{
+    text-align: center; 
+    font-size: 70px; 
+    color:#557155 ;
+}
+
+@media only screen and (max-width:800px){
+    .bigtext h2{
+        font-size: 40px;
+    }
+
+}
+
+@media only screen  and  (min-width:800px) and (max-width:1100px){
+    .bigtext h2{
+        font-size: 50px;
+    }
+}
+
+.smalltext{
+    width: 100%;
+    height: 120px;
+    background-color: transparent; 
+    margin-top: 2%;
+}
+
+@media only screen and (min-width:1101px){
+    .smalltext{
+        padding-left: 20%;
+        padding-top: 3%;
+    }
+}
+
+.ourcard{
+    width: 100%;
+    min-height: 250px;
+    background-color: transparent;
+    margin-top: 5%; 
+    display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width:800px){
+    .ourcard{
+        flex-direction: column;
+        row-gap: 20px;
+        margin-top: 20%;
+    }
+
+}
+
+@media only screen  and  (min-width:800px) and (max-width:1100px){
+    .ourcard{
+        flex-direction: column;
+        row-gap: 20px;
+        margin-top: 20%;
+    }
+}
+
+.vision{
+    width: 47%;
+    height: 250px;
+    background-color: lightgrey;
+    border-radius: 5px;
+    background-image: url(human.jpg);
+    background-size: cover;
+}
+
+@media only screen and (max-width:800px){
+    .vision{
+        width: 100%;
+    }
+}
+
+@media only screen  and  (min-width:800px) and (max-width:1100px){
+    .vision{
+        width: 100%;
+    }
+}
+
+.overlay0{
+    width: 100%;
+    height: 250px;
+    background-color: rgba(232,158,33,0.5); 
+    border-radius: 5px;
+}
+
+.hint{
+    width: 100%;
+    height: 55px;
+    background-color: transparent;
+}
+
+.full{
+    width: 100%;
+    height: 200px;
+    background-color: transparent;
+    margin-top: 2%;
+}
+
+.full h5{
+    font-size: 21px; 
+    color: rgb(60,60,60);
+}
+
+@media only screen and (max-width: 615px){
+    .full h5{
+        font-size: 17px;
+    }
+}
+
+.mission{
+    width: 47%;
+    height: 250px;
+    background-color: lightgrey;
+    border-radius: 5px;
+    background-image: url(hail.png);
+    background-size: cover;
+}
+
+@media only screen and (max-width:800px){
+    .mission{
+        width: 100%;
+    }
+}
+
+@media only screen  and  (min-width:800px) and (max-width:1100px){
+    .mission{
+        width: 100%;
+    }
+}
+
+.storytext{
+    width: 70%;
+    height: 50px;
+    background-color: transparent; 
+    margin-top: 5%; 
+}
+
+.stories{
+    width: 100%;
+    height: fit-conten5;
+    background-color: transparent;
+    margin-top: 5%;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+.card1{
+    width: 33%;
+    min-height: 250px;
+    background-color: transparent;
+    display: inline-block;
+    border-radius: 5px;
+    margin-left: 5px;
+    box-shadow: 0px 0px 2px 2px rgb(200, 200, 200);
+    margin-top: 3px;
+    float: left;
+}
+
+@media only screen and (max-width:800px){
+    .card1{
+        width: 98%;
+    }
+}
+
+@media only screen  and  (min-width:800px) and (max-width:1100px){
+    .card1{
+        width: 98%;
+    }
+}
+
+.imgs{
+    width: 100%;
+    height: 200px;
+    background-color: lightgrey;  
+}
+
+.more{
+    width: 100%;
+    min-height: 200px;
+    background-color: transparent ;   
+    margin-top: 2%; 
+}
+
+.moretext{
+    width: 100%;
+    min-height: 60px;
+    background-color: transparent;  
+}
+
+.moretext0{
+    width: 100%;
+    height: 60px;
+    background-color: transparent;  
+}
+
+.card2{
+    width: 33%;
+    min-height: 250px;
+    background-color: transparent;
+    display: inline-block;
+    border-radius: 7px;
+    box-shadow: 0px 0px 2px 2px rgb(200, 200, 200);
+    margin-left: 10px;
+}
+
+@media only screen and (max-width:800px){
+    .card2{
+        width: 98%;
+    }
+}
+
+@media only screen  and  (min-width:800px) and (max-width:1100px){
+    .card2{
+        width: 98%;
+    }
+}
+
+.card3{
+    width: 33%;
+    min-height: 250px;
+    background-color: transparent;
+    display: inline-block;
+    border-radius: 7px;
+    box-shadow: 0px 0px 2px 2px rgb(200, 200, 200);
+    margin-left: 10px;
+}
+
+@media only screen and (max-width:800px){
+    .card3{
+        width: 98%;
+    }
+}
+
+@media only screen  and  (min-width:800px) and (max-width:1100px){
+    .card3{
+        width: 98%;
+    }
+}
+
+.card4{
+    width: 33%;
+    min-height: 250px;
+    background-color: transparent;
+    display: inline-block;
+    border-radius: 7px;
+    margin-right: 5px;
+    box-shadow: 0px 0px 2px 2px rgb(200, 200, 200);
+    margin-left: 10px;
+}
+
+@media only screen and (max-width:800px){
+    .card4{
+        width: 98%;
+    }
+}
+
+@media only screen  and  (min-width:800px) and (max-width:1100px){
+    .card4{
+        width: 98%;
+    }
+}
+
+.card5{
+    width: 33%;
+    min-height: 250px;
+    background-color: transparent;
+    display: inline-block;
+    border-radius: 7px;
+    margin-right: 5px;
+    box-shadow: 0px 0px 2px 2px rgb(200, 200, 200);
+    margin-left: 3px;
+}
+
+@media only screen and (max-width:800px){
+    .card5{
+        width: 98%;
+    }
+}
+
+@media only screen  and  (min-width:800px) and (max-width:1100px){
+    .card5{
+        width: 98%;
+    }
+}
+
+.impacttext{
+    width: 50%;
+    height: 50px;
+    background-color: transparent; 
+    margin-top: 5%; 
+}
+
+.impact{
+    width: 100%;
+    min-height: 250px;
+    background-color: transparent;
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media only screen and (max-width:800px){
+    .impact{
+       flex-direction: column;
+       row-gap: 20px;
+    }
+}
+
+@media only screen  and  (min-width:800px) and (max-width:1100px){
+    .impact{
+        flex-direction: column;
+        row-gap: 20px;
+     }
+}
+
+.cardone{
+    width: 33%;
+    min-height: 250px;
+    background-color: transparent;
+    border-radius: 7px;
+}
+
+@media only screen and (max-width:800px){
+    .cardone{
+        width: 100%;
+    }
+}
+
+@media only screen  and  (min-width:800px) and (max-width:1100px){
+    .cardone{
+        width: 100%;
+    }
+}
+
+.cardtwo{
+    width: 33%;
+    min-height: 250px;
+    background-color: transparent;
+    border-radius: 7px;
+}
+
+@media only screen and (max-width:800px){
+    .cardtwo{
+        width: 100%;
+    }
+}
+
+@media only screen  and  (min-width:800px) and (max-width:1100px){
+    .cardtwo{
+        width: 100%;
+    }
+}
+
+.cardthree{
+    width: 33%;
+    min-height: 250px;
+    background-color: transparent;
+    border-radius: 7px;
+}
+
+@media only screen and (max-width:800px){
+    .cardthree{
+        width: 100%;
+    }
+}
+
+@media only screen  and  (min-width:800px) and (max-width:1100px){
+    .cardthree{
+        width: 100%;
+    }
+}
+
+
+.involvedtext{
+    width: 50%;
+    height: 50px;
+    background-color: transparent; 
+    margin-top: 5%; 
+}
+
+.getinvolved{
+    width: 100%;
+    min-height: 350px;
+    background-color: transparent;
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width:800px){
+    .getinvolved{
+       flex-direction: column;
+       row-gap: 20px;
+    }
+}
+
+@media only screen  and  (min-width:800px) and (max-width:1100px){
+    .getinvolved{
+        flex-direction: column;
+        row-gap: 20px;
+     }
+}
+
+.carda{
+    width: 33%;
+    min-height: 390px;
+    background-color: #e89e21;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width:800px){
+    .carda{
+        width: 100%;
+    }
+}
+
+@media only screen  and  (min-width:800px) and (max-width:1100px){
+    .carda{
+        width: 100%;
+    }
+}
+.iconhld{
+    width: 100%;
+    height: 120px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ico{
+    width: 30%;
+    height: 100px;
+    background-color: transparent;  
+    border-radius: 50%;
+    box-shadow: 0px 0px 1px 2px #557155;
+}
+
+.pacttext{
+    width: 100%;
+    min-height: 200px;
+    background-color: transparent; 
+    margin-top: 2%;
+}
+
+.short{
+    width: 100%;
+    height: 50px;
+    background-color: transparent;   
+}
+
+.pactbut{
+    width: 20%;
+    height: 40px;
+    background-color: #557155;  
+    border-radius: 7%; 
+    margin-left: 40%;
+}
+
+.cardb{
+    width: 33%;
+    min-height: 390px;
+    background-color: #557155;
+    border-radius: 7px;
+}
+
+@media only screen and (max-width:800px){
+    .cardb{
+        width: 100%;
+    }
+}
+
+@media only screen  and  (min-width:800px) and (max-width:1100px){
+    .cardb{
+        width: 100%;
+    }
+}
+
+.pactbut1{
+    width: 24%;
+    height: 40px;
+    background-color: #e89e21;  
+    border-radius: 7%; 
+    margin-left: 40%;
+}
+
+.ico2{
+    width: 30%;
+    height: 100px;
+    background-color: transparent;  
+    border-radius: 50%;
+    box-shadow: 0px 0px 1px 2px #e89e21;
+}
+
+.cardc{
+    width: 33%;
+    min-height: 390px;
+    background-color: #e89e21;
+    border-radius: 7px;
+}
+
+@media only screen and (max-width:800px){
+    .cardc{
+        width: 100%;
+    }
+}
+
+@media only screen  and  (min-width:800px) and (max-width:1100px){
+    .cardc{
+        width: 100%;
+    }
+}
+
+
+.footer{
+    width: 100%;
+    min-height: 250px;
+    background-color: #e89e21;
+    margin-top: 10%;
+}
+
+.footerhld{
+  width: 92%;
+  min-height: 250px;
+  background-color: transparent;
+  margin-left: 4%; 
+  display: flex;
+  justify-content: space-between;
+  border-bottom: #557155 2px solid;
+}
+
+@media only screen and (max-width:800px){
+    .footerhld{
+     flex-direction: column;
+     row-gap: 20px;
+    }
+}
+
+@media only screen  and  (min-width:800px) and (max-width:1100px){
+    .footerhld{
+        flex-direction: column;
+        row-gap: 20px;
+       }
+}
+
+.intouch{
+    width: 30%;
+    min-height: 150px;
+    background-color: transparent;
+ }
+
+ @media only screen and (max-width:800px){
+    .intouch{
+    width: 100%;
+    }
+}
+
+@media only screen  and  (min-width:800px) and (max-width:1100px){
+    .intouch{
+        width: 100%;
+        }
+}
+
+
+ .touchinfo{
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+ }
+
+ .iconshld{
+    width: 60%;
+    height: 40px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .iconhld2{
+    width: 30%;
+    height: 40px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+ }
+
+  .iconhld2:hover{
+    transform: scale(1.2);
+ }
+ 
+ .go{
+    font-size: 28px;
+    padding-left: 10%;
+    color: rgb(80,80,80);
+ }
+
+ .links{
+    width: 30%;
+    height: 150px;
+    background-color: transparent;
+ }
+
+ @media only screen and (max-width:800px){
+    .links{
+    width: 100%;
+    }
+}
+
+@media only screen  and  (min-width:800px) and (max-width:1100px){
+    .links{
+        width: 100%;
+        }
+}
+
+ .linkinfo{
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+ }
+
+ .letter{
+    width: 35%;
+    height: 190px;
+    background-color: transparent;
+ }
+
+ @media only screen and (max-width:800px){
+    .letter{
+    width: 100%;
+    }
+}
+
+@media only screen  and  (min-width:800px) and (max-width:1100px){
+    .letter{
+        width: 100%;
+        }
+}
+
+ .letterinfo{
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+ }
+
+ .shortnews{
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    margin-top: 3px;
+ }
+
+ .searchhld{
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    margin-top: 3px;
+    display: flex;
+ }
+
+ .search{
+    width: 75%;
+    height: 50px;
+    background-color: transparent;
+ }
+
+ .email{
+    width: 100%;
+    height: 50px; 
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+    font-size: 15px;
+    outline: none;
+    border: 0 transparent;
+    padding-left: 5%;
+ }
+ 
+ .searchbut{
+    width: 18%;
+    height: 50px;
+    background-color: transparent;
+ }
+
+ .sign{
+    width: 100%;
+    height: 50px; 
+    background-color: #557155;
+    font-size: 15px;
+    border: 0 transparent;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+        color: #ffffff;
+ }
+
+ .end{
+    width: 100%;
+    height: 60px; 
+    background-color: #e89e21; 
+    display: flex;
+    align-items: center;
+    padding-left: 4%;
+ }
